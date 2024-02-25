@@ -1,0 +1,10 @@
+
+__pycache__/
+
+# ignore dependencies: nodejs: node_modules, python: venv
+node_modules/
+.venv/
+
+# ignore env vars
+.env
+

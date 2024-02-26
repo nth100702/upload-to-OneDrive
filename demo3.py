@@ -108,10 +108,10 @@ def handle_upload_large_file(file_size,file_path,access_token,child_folder_id):
             print(response.status_code)
             if response.status_code==202 or response.status_code == 201:
                 print("everything is alright")
-            elif response.status_code == 409 :
-                item_id=get_folder_id(child_folder_id,msgrapg_access_token2,index)
+            # elif response.status_code == 409 :
+            #     item_id=get_folder_id(child_folder_id,msgrapg_access_token2,index)
 
-                handle_upload_error(item_id,access_token,upload_url)
+            #     handle_upload_error(item_id,access_token,upload_url)
             else :
                 print("something went wrong dude")
 
